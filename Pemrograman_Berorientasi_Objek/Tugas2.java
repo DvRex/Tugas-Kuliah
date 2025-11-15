@@ -75,6 +75,17 @@ public class Tugas2 {
             i++; // Menambah Nilai Variabel + 1
             
         }
+
+        System.out.println("------------------------------------------");
+        System.out.println("Tugas No 3 || Uncounted Loop || Do/While");
+        System.out.println("------------------------------------------");
+
+        int hitungan = 1;
+        
+        do {
+            System.out.println("Perulangan Ke - " + hitungan);
+            hitungan++;  
+        } while (hitungan <= 10);
         
           System.out.println();
           System.out.println("====================================================================");
@@ -236,5 +247,6 @@ public class Tugas2 {
 }
     
 }   
+
 
 
