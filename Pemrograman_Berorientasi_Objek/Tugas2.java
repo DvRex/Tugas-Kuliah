@@ -43,6 +43,30 @@ public class Tugas2 {
         System.out.println();
         System.out.println("====================================================================");
         System.out.println();
+            
+            Scanner ketik = new Scanner(System.in);
+        
+            System.out.print("Masukkan Nilai = ");
+            int nilai1 = ketik.nextInt();
+            int sn = 75;
+            
+            String hasil = nilai1 >= sn?"Lulus":"Tidak Lulus";
+            System.out.println("Nilai Agus = "+ nilai1);
+            System.out.println("Agus dinyatakan "+ hasil);
+            
+        System.out.println("====================================================================");
+            
+           System.out.print("Masukkan Angka = ");
+           int angka1 = ketik.nextInt();
+           
+           String kondisi = angka1%2==0?"Genap":"Ganjil";
+           System.out.println("Angka Ini Ternyata "+ kondisi);
+           
+
+        System.out.println();
+        System.out.println("====================================================================");
+        System.out.println();
+        
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         
         System.out.println("----------------------------");
@@ -57,11 +81,60 @@ public class Tugas2 {
          System.out.println();
          System.out.println("====================================================================");
          System.out.println();
+         
+            int awal, akhir;
+            
+            System.out.println("Range Angka");
+            System.out.print("Awal = ");
+            awal = ketik.nextInt();
+            System.out.print("Akhir = ");
+            akhir = ketik.nextInt();
+            
+            for(int a=awal; a < akhir; a++) {
+                System.out.println(a);
+            }
+         
+         System.out.println("====================================================================");    
+         
+            System.out.println("Angka Genap");
+            System.out.print("Awal = ");
+            awal = ketik.nextInt();
+            System.out.print("Akhir = ");
+            akhir = ketik.nextInt();
+            
+            for(int a=awal; a < akhir; a++) {
+                int hasil1 = a % 2;
+                if (hasil1 == 0) {
+                        System.out.println(a+" ");
+                }
+            }
+            
+         System.out.println("===================================================================="); 
+            
+            System.out.println("Angka Genap");
+            System.out.print("Awal = ");
+            awal = ketik.nextInt();
+            System.out.print("Akhir = ");
+            akhir = ketik.nextInt();
+            
+            for(int a=awal; a < akhir; a++) {
+                int hasil1 = a % 2;
+                if (hasil1 == 0) {
+                        System.out.println(a+" ");
+                }
+                else{
+                  System.out.println("Salah Woy, Input Ulang");
+                    }
+            }
+    
+         System.out.println();
+         System.out.println("====================================================================");
+         System.out.println();
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////       
         
-        System.out.println("------------------------------");
-        System.out.println("Tugas No 3 || Uncounted Loop");
-        System.out.println("------------------------------");
+        System.out.println("----------------------------------------");
+        System.out.println("Tugas No 3 || Uncounted Loop || While");
+        System.out.println("----------------------------------------");
 
         // Tugas No 3
         // Uncounted Loop
@@ -75,7 +148,54 @@ public class Tugas2 {
             i++; // Menambah Nilai Variabel + 1
             
         }
-
+        
+        System.out.println("====================================================================");
+            // Menampilkan Deret Angka
+            int whileB = 1;
+            while (whileB <= 5) {
+                System.out.println(" " + whileB);
+                whileB++;
+            }
+                System.out.println(" ");
+        
+        System.out.println("====================================================================");
+            // Menampilkan Deret Angka Dengan Inputan
+            int whileAwal, whileAkhir;
+            
+                System.out.println("Deret Angka");
+                System.out.println("Awal = ");
+                whileAwal = ketik.nextInt();
+                System.out.println("Akhr = ");
+                whileAkhir = ketik.nextInt();
+                
+                
+                int awalWhile = whileAwal;
+                while (awalWhile <= whileAkhir) {
+                    System.out.println(awalWhile + " ");
+                    awalWhile++;
+                }
+                    System.out.println("");
+                    
+        System.out.println("====================================================================");
+              // Menampilkan Deret Angka Genap
+                int whileAwal1, whileAkhir1;
+            
+                System.out.println("Deret Angka");
+                System.out.println("Awal = ");
+                whileAwal1 = ketik.nextInt();
+                System.out.println("Akhr = ");
+                whileAkhir1 = ketik.nextInt();
+                
+                
+                int awalWhile1 = whileAwal1;
+                while (awalWhile1 <= whileAkhir1) {
+                      int hasil1 = awalWhile1 % 2;
+                      if (hasil1 == 0) {
+                          System.out.println(awalWhile1 + " ");
+                      }
+                }         awalWhile1++;
+                 System.out.println("");
+        
         System.out.println("------------------------------------------");
         System.out.println("Tugas No 3 || Uncounted Loop || Do/While");
         System.out.println("------------------------------------------");
@@ -247,6 +367,5 @@ public class Tugas2 {
 }
     
 }   
-
 
 
